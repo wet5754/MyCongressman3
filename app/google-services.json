@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "555644913908",
+    "firebase_url": "https://mycongressman3-a5b93.firebaseio.com",
+    "project_id": "mycongressman3-a5b93",
+    "storage_bucket": "mycongressman3-a5b93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555644913908:android:9968c538640ee4c224f6a1",
+        "android_client_info": {
+          "package_name": "com.example.mycongressman3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555644913908-284hu4beej8ej6v1n4es7i0dv62tkci9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mycongressman3",
+            "certificate_hash": "edd5ef547d8626a37333373525435104da6d52f3"
+          }
+        },
+        {
+          "client_id": "555644913908-51ctikhje8lmd4772l38p64v5il0p2s0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoF2Un1ePOe_PZ8YiqmInQcoDVnNtW_1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555644913908-51ctikhje8lmd4772l38p64v5il0p2s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
