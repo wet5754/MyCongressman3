@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@drawable/radius"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/input_search"
+            android:gravity="center"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="국회의원 성명을 입력하세요"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            android:singleLine="true" />
+
+        <ImageButton
+            android:id="@+id/foodsearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:background="@drawable/textview_white"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_search" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

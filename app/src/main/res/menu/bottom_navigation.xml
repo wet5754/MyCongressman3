@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/b_timeline"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="Search" />
+        android:icon="@drawable/icon_timeline"
+        android:title="새 소식" />
     <item
         android:id="@+id/b_trending"
-        android:icon="@android:drawable/ic_menu_camera"
-        android:title="Camera" />
+        android:icon="@drawable/icon_trending"
+        android:title="트렌딩" />
     <item
         android:id="@+id/b_my_page"
-        android:icon="@android:drawable/ic_menu_call"
-        android:title="Call" />
+        android:icon="@drawable/icon_myp"
+        android:title="나의 페이지" />
 </menu>

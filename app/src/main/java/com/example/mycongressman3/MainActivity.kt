@@ -3,7 +3,9 @@ package com.example.mycongressman3
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.get
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.ui.AppBarConfiguration
 import com.google.android.material.navigation.NavigationView
@@ -42,6 +44,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SearchActivity::class.java)
             startActivity(intent)
         }
+        bottom_tab.setOnNavigationItemReselectedListener {
+            if (bottom_tab[0].isEnabled){
+                Toast.makeText(applicationContext, "tab1",Toast.LENGTH_SHORT).show() //이제 프레임넣는거!
+            }
+        }
+
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
