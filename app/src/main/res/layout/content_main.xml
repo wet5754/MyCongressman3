@@ -24,7 +24,8 @@
             android:paddingTop="10dp"
             android:paddingLeft="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_gravity="left"
             android:orientation="horizontal">
 
@@ -47,14 +48,15 @@
                 >
                 <ImageView
                     android:id="@+id/b_title"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:scaleType="centerInside"
                     android:src="@drawable/logo_icon" />
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="40dp"
+                    android:scaleType="fitStart"
                     android:src="@drawable/logo_title" />
             </LinearLayout>
 
@@ -71,17 +73,19 @@
         </LinearLayout>
 
         <FrameLayout
+            android:id="@+id/bottom_tab_frame"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            />
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/bottom_tab"
-        android:layout_gravity="bottom"
-        app:menu="@menu/bottom_navigation"
-        tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="10dp" />
+            app:menu="@menu/bottom_navigation"
+            tools:layout_editor_absoluteX="325dp"
+            tools:layout_editor_absoluteY="10dp" />
 
 </LinearLayout>
