@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/b_timeline"
-        android:icon="@drawable/icon_timeline"
+        android:icon="@drawable/selector_1"
         android:title="새 소식" />
     <item
         android:id="@+id/b_trending"
-        android:icon="@drawable/icon_trending"
+        android:icon="@drawable/selector_2"
         android:title="트렌딩" />
     <item
         android:id="@+id/b_my_page"
-        android:icon="@drawable/icon_myp"
+        android:icon="@drawable/selector_3"
         android:title="나의 페이지" />
 </menu>

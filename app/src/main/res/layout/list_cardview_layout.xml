@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.recyclerview.widget.RecyclerView
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="15dp"
     app:cardElevation="10dp"
     android:layout_marginBottom="10dp"
-    android:backgroundTint="@color/cardview_light_background"
     android:divider="@android:color/transparent"
     android:dividerHeight="0.5px"
     android:clipToPadding="false"
@@ -15,62 +14,69 @@
     android:layout_marginVertical="5dp"
     android:layout_width="match_parent"
     android:layout_height="150dp">
+
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <ImageView
             android:layout_margin="10dp"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"/>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/list_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="이름(한문이름)"
-            android:textSize="20dp"
-            android:textColor="@android:color/black" />
-        <TextView
-            android:id="@+id/list_district"
-            android:text="지역구"
-            android:textSize="15dp"
-            android:textColor="@android:color/black"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"/>
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/list_party_logo"
-                android:layout_gravity="center"
-                android:layout_width="20dp"
-                android:layout_height="20dp"/>
             <TextView
-                android:paddingHorizontal="5dp"
-                android:id="@+id/list_party"
-                android:text="소속정당"
+                android:padding="2dp"
+                android:id="@+id/list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름(한문이름)"
+                android:textSize="20dp"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:padding="2dp"
+
+                android:id="@+id/list_district"
+                android:text="지역구"
                 android:textSize="15dp"
                 android:textColor="@android:color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/list_party"
+                    android:text="소속정당"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/list_party_logo"
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="right"
+                android:id="@+id/list_follow_button"
+                android:text="팔로우"
+                android:textSize="18dp"
+                android:layout_width="100dp"
+                android:layout_marginVertical="5dp"
+                android:padding="5dp"
+                android:layout_height="50dp"
+                />
+
         </LinearLayout>
-
-        <Button
-            android:id="@+id/list_follow_button"
-            android:text="follow"
-            android:textSize="15dp"
-            android:layout_width="wrap_content"
-            android:layout_marginVertical="5dp"
-            android:padding="5dp"
-            android:layout_height="30dp"/>
-
     </LinearLayout>
 
-
-    </LinearLayout>
-
-</androidx.recyclerview.widget.RecyclerView>
+</androidx.cardview.widget.CardView>

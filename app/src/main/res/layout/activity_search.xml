@@ -7,11 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
-
+    <ImageView
+        android:src="@drawable/logo_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="8dp"
         android:gravity="center"
         android:background="@drawable/radius"
         android:orientation="horizontal"
@@ -19,7 +26,6 @@
 
         <EditText
             android:id="@+id/input_search"
-            android:gravity="center"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
@@ -41,5 +47,7 @@
         android:layout_marginTop="20dp"
         android:id="@+id/search_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>
