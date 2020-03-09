@@ -8,8 +8,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mycongressman0220.DataClass.Congressman
 
-class ListAdapter(var items: ArrayList<Congressman>):RecyclerView.Adapter<ListAdapter.ViewHolder>(){
+class CongressmanAdapter(var items: ArrayList<Congressman>):RecyclerView.Adapter<CongressmanAdapter.ViewHolder>(){
     inner class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         var name = itemView.findViewById<TextView>(R.id.list_name)
         var district = itemView.findViewById<TextView>(R.id.list_district)
@@ -18,7 +19,7 @@ class ListAdapter(var items: ArrayList<Congressman>):RecyclerView.Adapter<ListAd
         var follow = itemView.findViewById<Button>(R.id.list_follow_button)
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.list_cardview_layout, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.congressman_card_layout, parent, false)
         Log.d("adapter","viewholder made")
         return ViewHolder(v)
     }
